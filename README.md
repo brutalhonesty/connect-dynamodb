@@ -12,7 +12,6 @@ connect-dynamodb is a DynamoDB session store backed by the [aws-sdk](https://git
   - `accessKeyId` Amazon AWS Access Key
   - `secretAccessKey` Amazon AWS Secret Access Key
   - `region` Amazon AWS Region
-  - `endpoint` Amazon AWS End Point
   - `table` DynamoDB server session table name
   - `prefix` Key prefix, defaulting to "sess"
   - `reapInterval` How often expired sessions should be cleaned up
@@ -27,8 +26,7 @@ connect-dynamodb is a DynamoDB session store backed by the [aws-sdk](https://git
 		//Credentials to Amazon AWS
 		accessKeyId: 'AmazonAWSAccessKey',
         secretAccessKey: 'AmazonAWSSecretAccessKey',
-        region: 'AmazonAWSRegion',
-        endpoint: 'AmazonAWSEndPoint'
+        region: 'AmazonAWSRegion'
 	  
 	  	// Optional. How often expired sessions should be cleaned up.
   	  	// Defaults to 600000 (10 minutes).
