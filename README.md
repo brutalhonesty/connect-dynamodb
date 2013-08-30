@@ -20,10 +20,12 @@ connect-dynamodb is a DynamoDB session store backed by the [aws-sdk](https://git
 		// Name of the table you would like to use for sessions.
 		// Defaults to 'sessions'
 	  	table: 'myapp-sessions',
-	
-		// Path to AWS credentials
-  	  	// Defaults to './aws-config.json'
-		AWSConfigPath: './path/to/credentials.json',
+		
+		//Credentials to Amazon AWS
+		accessKeyId: 'AmazonAWSAccessKey',
+        secretAccessKey: 'AmazonAWSSecretAccessKey',
+        region: 'AmazonAWSRegion',
+        endpoint: 'AmazonAWSEndPoint'
 	  
 	  	// Optional. How often expired sessions should be cleaned up.
   	  	// Defaults to 600000 (10 minutes).
